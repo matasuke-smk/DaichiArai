@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>イラストレーター名 - ポートフォリオ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>DAICHI ARAI</h1>
+            <nav>
+                <ul>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <main>
+        <section id="gallery" class="container">
+            <h2>GALLERY</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">ALL</button>
+                <button class="filter-btn" data-filter="homeless">HOMELESS</button>
+                <button class="filter-btn" data-filter="wack">WACK</button>
+                <button class="filter-btn" data-filter="thug">THUG</button>
+                <!-- 必要に応じてカテゴリーを追加 -->
+            </div>
+            <div class="gallery-grid">
+                <!-- ここに作品を追加します -->
+                <div class="gallery-item">
+                    <img src="images/thumbnail1.jpg" alt="浮浪者" data-full="images/full1.jpg" data-category="homeless" data-description="彼は家をなくしました。">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/thumbnail2.jpg" alt="変顔" data-full="images/full2.jpg" data-category="wack" data-description="面白いですね。">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/thumbnail3.jpg" alt="アホ面" data-full="images/full3.jpg" data-category="wack" data-description="彼はアホです。">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/thumbnail4.jpg" alt="犯罪者と新井" data-full="images/full4.jpg" data-category="thug" data-description="左側の彼は薬物で逮捕されました。">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/thumbnail5.jpg" alt="浮浪者" data-full="images/full5.jpg" data-category="homeless" data-description="彼は汚いところでも寝ることが出来ます。">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/thumbnail6.jpg" alt="犯罪者と新井" data-full="images/full6.jpg" data-category="thug" data-description="左側の彼は自転車を盗んで逮捕されました。">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2>ABOUT</h2>
+            <p>私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。私はアホです。</p>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>CONTACT</h2>
+            <p>イラストのご依頼、ご相談などお気軽にご連絡ください。</p>
+            <p>Email: <a href="mailto:webadoresu1111@gmail.com">webadoresu1111@gmail.com</a></p>
+            <p>X (旧Twitter): <a href="https://twitter.com/yourprofile" target="_blank">@yourXprofile</a></p>
+            <!-- 他のSNSリンクやコンタクトフォームをここに追加できます -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 DAICHI ARAI. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 画像拡大表示用モーダル -->
+    <div id="imageModal" class="modal">
+        <span class="close-button">&times;</span>
+        <img class="modal-content" id="fullImage">
+        <div id="modalCaptionContainer">
+            <h3 id="modalTitle"></h3>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
